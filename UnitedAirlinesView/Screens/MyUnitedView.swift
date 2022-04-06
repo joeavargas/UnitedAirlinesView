@@ -201,9 +201,39 @@ struct MyUnitedView: View {
             .background(Color.white)
             
             // MARK: - Do you have a known traveler number section
+            VStack {
+                HStack {
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text("Do you have a Known Traveler Number")
+                            .fontWeight(.semibold)
+
+                        Text("Add your Known Traveler Number so that it's automatically applied for future flights.")
+                            .font(.system(size: 14))
+                        
+                        HStack {
+                            Image(systemName: "plus.circle.fill")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 20, height: 20)
+                                .foregroundColor(.teal)
+                            Text("Add Known Traveler Number")
+                                .foregroundColor(.teal)
+                        }
+                        .padding(.top)
+                        
+                        Text("Please note, any current reservations will need the number added seperately through the Reservation details page")
+                            .font(.system(size: 12))
+                            .fontWeight(.light)
+                    }.padding(.horizontal)
+                    Spacer()
+                }
+            }
+            .background(Color.white)
+            .padding([.top, .bottom])
             
             // MARK: - Find everything ok?
         }
+        .background(Color.secondary)
     }
 }
 
