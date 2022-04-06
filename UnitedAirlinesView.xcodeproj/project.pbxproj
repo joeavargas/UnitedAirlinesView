@@ -10,6 +10,7 @@
 		E32F6AAB27FDF35B003D2C6A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F6AAA27FDF35B003D2C6A /* MainView.swift */; };
 		E32F6AB327FDF3AC003D2C6A /* MyUnitedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F6AB227FDF3AC003D2C6A /* MyUnitedView.swift */; };
 		E32F6AB627FE0862003D2C6A /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F6AB527FE0862003D2C6A /* NavigationBarModifier.swift */; };
+		E39EAA3327FE3D36000F47D9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39EAA3227FE3D36000F47D9 /* CardView.swift */; };
 		E3EE7DC427FDF0F900B6BB8C /* UnitedAirlinesViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE7DC327FDF0F900B6BB8C /* UnitedAirlinesViewApp.swift */; };
 		E3EE7DC827FDF0FA00B6BB8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3EE7DC727FDF0FA00B6BB8C /* Assets.xcassets */; };
 		E3EE7DCB27FDF0FA00B6BB8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3EE7DCA27FDF0FA00B6BB8C /* Preview Assets.xcassets */; };
@@ -19,6 +20,7 @@
 		E32F6AAA27FDF35B003D2C6A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E32F6AB227FDF3AC003D2C6A /* MyUnitedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUnitedView.swift; sourceTree = "<group>"; };
 		E32F6AB527FE0862003D2C6A /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
+		E39EAA3227FE3D36000F47D9 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		E3EE7DC027FDF0F900B6BB8C /* UnitedAirlinesView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitedAirlinesView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3EE7DC327FDF0F900B6BB8C /* UnitedAirlinesViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitedAirlinesViewApp.swift; sourceTree = "<group>"; };
 		E3EE7DC727FDF0FA00B6BB8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 		E32F6AA927FDF31F003D2C6A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E39EAA3227FE3D36000F47D9 /* CardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				E32F6AB327FDF3AC003D2C6A /* MyUnitedView.swift in Sources */,
 				E32F6AB627FE0862003D2C6A /* NavigationBarModifier.swift in Sources */,
 				E32F6AAB27FDF35B003D2C6A /* MainView.swift in Sources */,
+				E39EAA3327FE3D36000F47D9 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
