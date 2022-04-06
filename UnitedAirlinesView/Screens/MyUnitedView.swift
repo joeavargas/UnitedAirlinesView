@@ -108,7 +108,7 @@ struct MyUnitedView: View {
                     // Horizontal line
                     Divider()
                         .background(Color.black)
-                        .padding(.horizontal)
+                        .padding([.horizontal, .bottom])
                 }.padding(.top, 5)
             }
             .background(Color.white)
