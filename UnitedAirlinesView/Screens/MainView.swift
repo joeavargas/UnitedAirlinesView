@@ -16,7 +16,9 @@ struct MainView: View {
                 Text("HomeView")
                     .font(.system(size: 30, weight: .bold, design: .rounded))
                     .navigationBarTitle("United", displayMode: .inline)
+                    .navigationBarColor(.blue)
             }
+            
             .tabItem{
                 Image(systemName: "house.fill")
                 Text("Home")
@@ -27,6 +29,7 @@ struct MainView: View {
                 Text("BookFlightView")
                     .font(.system(size: 30, weight: .bold, design: .rounded))
                     .navigationBarTitle("Book", displayMode: .inline)
+                    .navigationBarColor(.blue)
             }
             .tabItem{
                 Image(systemName: "airplane")
@@ -37,6 +40,7 @@ struct MainView: View {
             NavigationView {
                 MyUnitedView()
                     .navigationBarTitle("My United", displayMode: .inline)
+                    .navigationBarColor(.blue)
                     
             }
             .tabItem{
@@ -49,6 +53,7 @@ struct MainView: View {
                 Text("FlightStatusView")
                     .font(.system(size: 30, weight: .bold, design: .rounded))
                     .navigationBarTitle("Search for flight", displayMode: .inline)
+                    .navigationBarColor(.blue)
             }
             .tabItem{
                 Image(systemName: "clock")
@@ -60,6 +65,7 @@ struct MainView: View {
                 Text("MoreView")
                     .font(.system(size: 30, weight: .bold, design: .rounded))
                     .navigationBarTitle("More", displayMode: .inline)
+                    .navigationBarColor(.blue)
             }
             .tabItem{
                 Image(systemName: "ellipsis")
@@ -76,3 +82,4 @@ struct MainView_Previews: PreviewProvider {
         MainView()
     }
 }
+
