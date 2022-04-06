@@ -35,114 +35,114 @@ struct MyUnitedView: View {
             
             // MARK: - Card view section
             VStack(spacing: 10) {
-                        // MARK: - Row 1
-                        HStack {
-                            // MARK: Mileage Plus
-                            VStack {
-                                Image(systemName: "bookmark.fill")
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(width: 20, height: 20)
-                                Text("MileagePlus")
-                            }
-                            .frame(width: 120, height: 100)
-                            .background(.white)
-                            .overlay{
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255,
-                                                  opacity: 0.1), lineWidth: 0.9)
-                                    .shadow(radius: 5)
-                            }
-                            
-                            // MARK: Trips
-                            VStack(spacing: 15) {
-                                Image(systemName: "airplane")
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(width: 20, height: 20)
-                                Text("MileagePlus")
-                            }
-                            .frame(width: 120, height: 100)
-                            .background(.white)
-                            .overlay{
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255,
-                                                  opacity: 0.1), lineWidth: 0.9)
-                                    .shadow(radius: 5)
-                            }
-                            
-                            // MARK: Wallet
-                            VStack(spacing: 15) {
-                                Image(systemName: "wallet.pass")
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(width: 20, height: 20)
-                                Text("Wallet")
-                            }
-                            .frame(width: 120, height: 100)
-                            .background(.white)
-                            .overlay{
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255,
-                                                  opacity: 0.1), lineWidth: 0.9)
-                                    .shadow(radius: 5)
-                            }
-                        }//: HStack
-                        
-                        // MARK: - Row 2
-                        HStack {
-                            // MARK: Mileage Plus
-                            VStack(alignment: .center) {
-                                Image(systemName: "list.number")
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(width: 20, height: 20)
-                                Text("Travel-Ready Center")
-                                    .lineLimit(2)
-                            }
-                            .frame(width: 120, height: 100)
-                            .background(.white)
-                            .overlay{
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255,
-                                                  opacity: 0.1), lineWidth: 0.9)
-                                    .shadow(radius: 5)
-                            }
-                            
-                            // MARK: Trips
-                            VStack(spacing: 15) {
-                                Image(systemName: "list.bullet.rectangle")
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(width: 20, height: 20)
-                                Text("Receipts")
-                            }
-                            .frame(width: 120, height: 100)
-                            .background(.white)
-                            .overlay{
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255,
-                                                  opacity: 0.1), lineWidth: 0.9)
-                                    .shadow(radius: 5)
-                            }
-                            
-                            // MARK: Wallet
-                            VStack(spacing: 15) {
-                                Image(systemName: "wallet.pass")
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(width: 20, height: 20)
-                                Text("Wallet")
-                            }
-                            .frame(width: 120, height: 100)
-                            .background(.white)
-                            .overlay{
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255,
-                                                  opacity: 0.1), lineWidth: 0.9)
-                                    .shadow(radius: 5)
-                            }
-                        }//: HStack
+                // MARK: - Row 1
+                HStack {
+                    // MARK: Mileage Plus
+                    VStack {
+                        Image(systemName: "bookmark.fill")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 20, height: 20)
+                        Text("MileagePlus")
+                    }
+                    .frame(width: 120, height: 100)
+                    .background(.white)
+                    .overlay{
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255,
+                                          opacity: 0.1), lineWidth: 0.9)
+                            .shadow(radius: 5)
+                    }
+                    
+                    // MARK: Trips
+                    VStack(spacing: 15) {
+                        Image(systemName: "airplane")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 20, height: 20)
+                        Text("MileagePlus")
+                    }
+                    .frame(width: 120, height: 100)
+                    .background(.white)
+                    .overlay{
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255,
+                                          opacity: 0.1), lineWidth: 0.9)
+                            .shadow(radius: 5)
+                    }
+                    
+                    // MARK: Wallet
+                    VStack(spacing: 15) {
+                        Image(systemName: "wallet.pass")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 20, height: 20)
+                        Text("Wallet")
+                    }
+                    .frame(width: 120, height: 100)
+                    .background(.white)
+                    .overlay{
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255,
+                                          opacity: 0.1), lineWidth: 0.9)
+                            .shadow(radius: 5)
+                    }
+                }//: HStack
+                
+                // MARK: - Row 2
+                HStack {
+                    // MARK: Mileage Plus
+                    VStack(alignment: .center) {
+                        Image(systemName: "list.number")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 20, height: 20)
+                        Text("Travel-Ready Center")
+                            .lineLimit(2)
+                    }
+                    .frame(width: 120, height: 100)
+                    .background(.white)
+                    .overlay{
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255,
+                                          opacity: 0.1), lineWidth: 0.9)
+                            .shadow(radius: 5)
+                    }
+                    
+                    // MARK: Trips
+                    VStack(spacing: 15) {
+                        Image(systemName: "list.bullet.rectangle")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 20, height: 20)
+                        Text("Receipts")
+                    }
+                    .frame(width: 120, height: 100)
+                    .background(.white)
+                    .overlay{
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255,
+                                          opacity: 0.1), lineWidth: 0.9)
+                            .shadow(radius: 5)
+                    }
+                    
+                    // MARK: Wallet
+                    VStack(spacing: 15) {
+                        Image(systemName: "wallet.pass")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 20, height: 20)
+                        Text("Wallet")
+                    }
+                    .frame(width: 120, height: 100)
+                    .background(.white)
+                    .overlay{
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255,
+                                          opacity: 0.1), lineWidth: 0.9)
+                            .shadow(radius: 5)
+                    }
+                }//: HStack
             }
             
             // MARK: - Upcoming trip section
@@ -203,28 +203,31 @@ struct MyUnitedView: View {
             // MARK: - Do you have a known traveler number section
             VStack {
                 HStack {
-                    VStack(alignment: .leading, spacing: 10) {
-                        Text("Do you have a Known Traveler Number")
-                            .fontWeight(.semibold)
-
-                        Text("Add your Known Traveler Number so that it's automatically applied for future flights.")
-                            .font(.system(size: 14))
-                        
-                        HStack {
-                            Image(systemName: "plus.circle.fill")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 20, height: 20)
-                                .foregroundColor(.teal)
-                            Text("Add Known Traveler Number")
-                                .foregroundColor(.teal)
-                        }
-                        .padding(.top)
-                        
-                        Text("Please note, any current reservations will need the number added seperately through the Reservation details page")
-                            .font(.system(size: 12))
-                            .fontWeight(.light)
-                    }.padding(.horizontal)
+                    VStack {
+                        VStack(alignment: .leading, spacing: 10) {
+                            Text("Do you have a Known Traveler Number")
+                                .fontWeight(.semibold)
+                            
+                            Text("Add your Known Traveler Number so that it's automatically applied for future flights.")
+                                .font(.system(size: 14))
+                            
+                            HStack {
+                                Image(systemName: "plus.circle.fill")
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 20, height: 20)
+                                    .foregroundColor(.teal)
+                                Text("Add Known Traveler Number")
+                                    .foregroundColor(.teal)
+                            }
+                            .padding(.top)
+                            
+                            Text("Please note, any current reservations will need the number added seperately through the Reservation details page")
+                                .font(.system(size: 11))
+                                .fontWeight(.light)
+                        }.padding(.horizontal)
+                    }
+                    .padding([.top, .bottom], 25)
                     Spacer()
                 }
             }
