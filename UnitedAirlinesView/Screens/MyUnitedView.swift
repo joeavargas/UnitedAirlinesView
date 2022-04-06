@@ -34,26 +34,28 @@ struct MyUnitedView: View {
             .background(Color.white)
             
             // MARK: - Card view section
-            VStack(spacing: 10) {
+            VStack {
                 // MARK: - Row 1
-                HStack {
-                    CardView(image: "bookmark.fill", subject: "MileagePlus")
-                    
-                    CardView(image: "airplane", subject: "Trips")
-                    
-                    CardView(image: "wallet.pass", subject: "Wallet")
+                VStack {
+                    HStack {
+                        CardView(image: "bookmark.fill", subject: "MileagePlus")
+                        
+                        CardView(image: "airplane", subject: "Trips")
+                        
+                        CardView(image: "wallet.pass", subject: "Wallet")
 
-                }//: HStack
-                
-                // MARK: - Row 2
-                HStack {
-                    CardView(image: "list.number", subject: "Travel-Ready Center")
+                    }//: HStack
                     
-                    CardView(image: "list.bullet.rectangle", subject: "Receipts")
-                    
-                    CardView(image: "airplane.circle", subject: "Travel credits")
+                    // MARK: - Row 2
+                    HStack {
+                        CardView(image: "list.number", subject: "Travel-Ready Center")
+                        
+                        CardView(image: "list.bullet.rectangle", subject: "Receipts")
+                        
+                        CardView(image: "airplane.circle", subject: "Travel credits")
 
-                }//: HStack
+                    }//: HStack
+                }
             }
             
             // MARK: - Upcoming trip section
