@@ -235,6 +235,55 @@ struct MyUnitedView: View {
             .padding([.top, .bottom])
             
             // MARK: - Find everything ok?
+            VStack {
+                HStack {
+                    VStack {
+                        VStack(alignment: .leading, spacing: 10) {
+                            VStack {
+                                HStack {
+                                    VStack(alignment: .leading) {
+                                        VStack {
+                                            Text("Find everything ok?")
+                                                .font(.system(size: 20))
+                                                .foregroundColor(.black)
+                                        }
+                                        
+                                        Text("We want to help you find all your stuff and anything else you may need")
+                                            .foregroundColor(.primary)
+                                            .lineLimit(3)
+                                        HStack {
+                                            Text("We would love your feedback")
+                                                .font(.caption)
+                                                .foregroundColor(.teal)
+                                            
+                                            Image(systemName: "arrow.up.right.square")
+                                                .resizable()
+                                                .scaledToFill()
+                                                .frame(width: 16, height: 16)
+                                                .background(Color.white)
+                                                .foregroundColor(.teal)
+                                        }
+                                    }
+                                    .layoutPriority(100)
+                                    
+                                    Spacer()
+                                }
+                                .padding()
+                            }
+                            .cornerRadius(10)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255, opacity: 0.1), lineWidth: 1)
+                            )
+                            .padding([.top, .horizontal])
+                        }.padding(.horizontal)
+                    }
+                    .padding([.top, .bottom], 25)
+                    Spacer()
+                }
+            }
+            .background(Color.white)
+            .padding([.top, .bottom])
         }
         .background(Color.secondary)
     }
