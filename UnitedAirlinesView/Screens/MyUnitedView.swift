@@ -34,115 +34,28 @@ struct MyUnitedView: View {
             .background(Color.white)
             
             // MARK: - Card view section
-            VStack(spacing: 10) {
+            VStack {
                 // MARK: - Row 1
-                HStack {
-                    // MARK: Mileage Plus
-                    VStack {
-                        Image(systemName: "bookmark.fill")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 20, height: 20)
-                        Text("MileagePlus")
-                    }
-                    .frame(width: 120, height: 100)
-                    .background(.white)
-                    .overlay{
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255,
-                                          opacity: 0.1), lineWidth: 0.9)
-                            .shadow(radius: 5)
-                    }
+                VStack(spacing: 20) {
+                    HStack(spacing: 20) {
+                        CardView(image: "bookmark.fill", subject: "MileagePlus")
+                        
+                        CardView(image: "airplane", subject: "Trips")
+                        
+                        CardView(image: "wallet.pass", subject: "Wallet")
+
+                    }//: HStack
                     
-                    // MARK: Trips
-                    VStack(spacing: 15) {
-                        Image(systemName: "airplane")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 20, height: 20)
-                        Text("MileagePlus")
-                    }
-                    .frame(width: 120, height: 100)
-                    .background(.white)
-                    .overlay{
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255,
-                                          opacity: 0.1), lineWidth: 0.9)
-                            .shadow(radius: 5)
-                    }
-                    
-                    // MARK: Wallet
-                    VStack(spacing: 15) {
-                        Image(systemName: "wallet.pass")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 20, height: 20)
-                        Text("Wallet")
-                    }
-                    .frame(width: 120, height: 100)
-                    .background(.white)
-                    .overlay{
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255,
-                                          opacity: 0.1), lineWidth: 0.9)
-                            .shadow(radius: 5)
-                    }
-                }//: HStack
-                
-                // MARK: - Row 2
-                HStack {
-                    // MARK: Mileage Plus
-                    VStack(alignment: .center) {
-                        Image(systemName: "list.number")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 20, height: 20)
-                        Text("Travel-Ready Center")
-                            .lineLimit(2)
-                    }
-                    .frame(width: 120, height: 100)
-                    .background(.white)
-                    .overlay{
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255,
-                                          opacity: 0.1), lineWidth: 0.9)
-                            .shadow(radius: 5)
-                    }
-                    
-                    // MARK: Trips
-                    VStack(spacing: 15) {
-                        Image(systemName: "list.bullet.rectangle")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 20, height: 20)
-                        Text("Receipts")
-                    }
-                    .frame(width: 120, height: 100)
-                    .background(.white)
-                    .overlay{
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255,
-                                          opacity: 0.1), lineWidth: 0.9)
-                            .shadow(radius: 5)
-                    }
-                    
-                    // MARK: Wallet
-                    VStack(spacing: 15) {
-                        Image(systemName: "wallet.pass")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 20, height: 20)
-                        Text("Wallet")
-                    }
-                    .frame(width: 120, height: 100)
-                    .background(.white)
-                    .overlay{
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255,
-                                          opacity: 0.1), lineWidth: 0.9)
-                            .shadow(radius: 5)
-                    }
-                }//: HStack
+                    // MARK: - Row 2
+                    HStack(spacing: 20) {
+                        CardView(image: "list.number", subject: "Travel-Ready Center")
+                        
+                        CardView(image: "list.bullet.rectangle", subject: "Receipts")
+                        
+                        CardView(image: "airplane.circle", subject: "Travel credits")
+
+                    }//: HStack
+                }
             }
             
             // MARK: - Upcoming trip section
@@ -195,8 +108,10 @@ struct MyUnitedView: View {
                     // Horizontal line
                     Divider()
                         .background(Color.black)
-                        .padding(.horizontal)
+                        .padding([.horizontal, .bottom])
                 }.padding(.top, 5)
+                
+                Divider().frame(width: UIScreen.main.bounds.width, height: 10).background(Color(UIColor.lightGray)).padding(.top, 20)
             }
             .background(Color.white)
             
@@ -230,6 +145,9 @@ struct MyUnitedView: View {
                     .padding([.top, .bottom], 25)
                     Spacer()
                 }
+                Divider()
+                    .frame(width: UIScreen.main.bounds.width, height: 10).background(Color(UIColor.lightGray))
+                    .padding(.top, 20)
             }
             .background(Color.white)
             .padding([.top, .bottom])
@@ -238,7 +156,7 @@ struct MyUnitedView: View {
             VStack {
                 HStack {
                     VStack {
-                        VStack(alignment: .leading, spacing: 10) {
+                        VStack(alignment: .leading) {
                             VStack {
                                 HStack {
                                     VStack(alignment: .leading) {
@@ -266,7 +184,7 @@ struct MyUnitedView: View {
                                     }
                                     .layoutPriority(100)
                                     
-                                    Spacer()
+//                                    Spacer()
                                 }
                                 .padding()
                             }
@@ -278,14 +196,12 @@ struct MyUnitedView: View {
                             .padding([.top, .horizontal])
                         }.padding(.horizontal)
                     }
-                    .padding([.top, .bottom], 25)
-                    Spacer()
+//                    .padding([.top, .bottom], 25)
                 }
             }
-            .background(Color.white)
+            .background(Color(UIColor.white))
             .padding([.top, .bottom])
         }
-        .background(Color.secondary)
     }
 }
 
