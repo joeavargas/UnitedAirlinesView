@@ -37,111 +37,22 @@ struct MyUnitedView: View {
             VStack(spacing: 10) {
                 // MARK: - Row 1
                 HStack {
-                    // MARK: Mileage Plus
-                    VStack {
-                        Image(systemName: "bookmark.fill")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 20, height: 20)
-                        Text("MileagePlus")
-                    }
-                    .frame(width: 120, height: 100)
-                    .background(.white)
-                    .overlay{
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255,
-                                          opacity: 0.1), lineWidth: 0.9)
-                            .shadow(radius: 5)
-                    }
+                    CardView(image: "bookmark.fill", subject: "MileagePlus")
                     
-                    // MARK: Trips
-                    VStack(spacing: 15) {
-                        Image(systemName: "airplane")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 20, height: 20)
-                        Text("MileagePlus")
-                    }
-                    .frame(width: 120, height: 100)
-                    .background(.white)
-                    .overlay{
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255,
-                                          opacity: 0.1), lineWidth: 0.9)
-                            .shadow(radius: 5)
-                    }
+                    CardView(image: "airplane", subject: "Trips")
                     
-                    // MARK: Wallet
-                    VStack(spacing: 15) {
-                        Image(systemName: "wallet.pass")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 20, height: 20)
-                        Text("Wallet")
-                    }
-                    .frame(width: 120, height: 100)
-                    .background(.white)
-                    .overlay{
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255,
-                                          opacity: 0.1), lineWidth: 0.9)
-                            .shadow(radius: 5)
-                    }
+                    CardView(image: "wallet.pass", subject: "Wallet")
+
                 }//: HStack
                 
                 // MARK: - Row 2
                 HStack {
-                    // MARK: Mileage Plus
-                    VStack(alignment: .center) {
-                        Image(systemName: "list.number")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 20, height: 20)
-                        Text("Travel-Ready Center")
-                            .lineLimit(2)
-                    }
-                    .frame(width: 120, height: 100)
-                    .background(.white)
-                    .overlay{
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255,
-                                          opacity: 0.1), lineWidth: 0.9)
-                            .shadow(radius: 5)
-                    }
+                    CardView(image: "list.number", subject: "Travel-Ready Center")
                     
-                    // MARK: Trips
-                    VStack(spacing: 15) {
-                        Image(systemName: "list.bullet.rectangle")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 20, height: 20)
-                        Text("Receipts")
-                    }
-                    .frame(width: 120, height: 100)
-                    .background(.white)
-                    .overlay{
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255,
-                                          opacity: 0.1), lineWidth: 0.9)
-                            .shadow(radius: 5)
-                    }
+                    CardView(image: "list.bullet.rectangle", subject: "Receipts")
                     
-                    // MARK: Wallet
-                    VStack(spacing: 15) {
-                        Image(systemName: "wallet.pass")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 20, height: 20)
-                        Text("Wallet")
-                    }
-                    .frame(width: 120, height: 100)
-                    .background(.white)
-                    .overlay{
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255,
-                                          opacity: 0.1), lineWidth: 0.9)
-                            .shadow(radius: 5)
-                    }
+                    CardView(image: "airplane.circle", subject: "Travel credits")
+
                 }//: HStack
             }
             
