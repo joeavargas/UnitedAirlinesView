@@ -10,39 +10,61 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         TabView {
-            Text("HomeView")
-                .font(.system(size: 30, weight: .bold, design: .rounded))
-                .tabItem{
-                    Image(systemName: "house.fill")
-                    Text("Home")
-                }
             
-            Text("BookFlightView")
-                .font(.system(size: 30, weight: .bold, design: .rounded))
-                .tabItem{
-                    Image(systemName: "airplane")
-                    Text("Book Flight")
-                }
+            // MARK: Home
+            NavigationView {
+                Text("HomeView")
+                    .font(.system(size: 30, weight: .bold, design: .rounded))
+                    .navigationBarTitle("United", displayMode: .inline)
+            }
+            .tabItem{
+                Image(systemName: "house.fill")
+                Text("Home")
+            }
             
-            MyUnitedView()
-                .tabItem{
-                    Image(systemName: "person")
-                    Text("My United")
-                }
+            // MARK: Book Flight
+            NavigationView {
+                Text("BookFlightView")
+                    .font(.system(size: 30, weight: .bold, design: .rounded))
+                    .navigationBarTitle("Book", displayMode: .inline)
+            }
+            .tabItem{
+                Image(systemName: "airplane")
+                Text("Book Flight")
+            }
             
-            Text("FlightStatusView")
-                .font(.system(size: 30, weight: .bold, design: .rounded))
-                .tabItem{
-                    Image(systemName: "clock")
-                    Text("Flight Status")
-                }
+            // MARK: MyUnitedView
+            NavigationView {
+                MyUnitedView()
+                    .navigationBarTitle("My United", displayMode: .inline)
+                    
+            }
+            .tabItem{
+                Image(systemName: "person")
+                Text("My United")
+            }
             
-            Text("MoreView")
-                .font(.system(size: 30, weight: .bold, design: .rounded))
-                .tabItem{
-                    Image(systemName: "ellipsis")
-                    Text("More")
-                }
+            // MARK: FlightStatusView
+            NavigationView {
+                Text("FlightStatusView")
+                    .font(.system(size: 30, weight: .bold, design: .rounded))
+                    .navigationBarTitle("Search for flight", displayMode: .inline)
+            }
+            .tabItem{
+                Image(systemName: "clock")
+                Text("Flight Status")
+            }
+            
+            // MARK: MoreView
+            NavigationView {
+                Text("MoreView")
+                    .font(.system(size: 30, weight: .bold, design: .rounded))
+                    .navigationBarTitle("More", displayMode: .inline)
+            }
+            .tabItem{
+                Image(systemName: "ellipsis")
+                Text("More")
+            }
         }
         .ignoresSafeArea()
         .accentColor(.black)
