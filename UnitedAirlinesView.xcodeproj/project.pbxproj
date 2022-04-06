@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E32F6AAB27FDF35B003D2C6A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F6AAA27FDF35B003D2C6A /* MainView.swift */; };
+		E32F6AB327FDF3AC003D2C6A /* MyUnitedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F6AB227FDF3AC003D2C6A /* MyUnitedView.swift */; };
 		E3EE7DC427FDF0F900B6BB8C /* UnitedAirlinesViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE7DC327FDF0F900B6BB8C /* UnitedAirlinesViewApp.swift */; };
-		E3EE7DC627FDF0F900B6BB8C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE7DC527FDF0F900B6BB8C /* ContentView.swift */; };
 		E3EE7DC827FDF0FA00B6BB8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3EE7DC727FDF0FA00B6BB8C /* Assets.xcassets */; };
 		E3EE7DCB27FDF0FA00B6BB8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3EE7DCA27FDF0FA00B6BB8C /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E32F6AAA27FDF35B003D2C6A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E32F6AB227FDF3AC003D2C6A /* MyUnitedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUnitedView.swift; sourceTree = "<group>"; };
 		E3EE7DC027FDF0F900B6BB8C /* UnitedAirlinesView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitedAirlinesView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3EE7DC327FDF0F900B6BB8C /* UnitedAirlinesViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitedAirlinesViewApp.swift; sourceTree = "<group>"; };
-		E3EE7DC527FDF0F900B6BB8C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E3EE7DC727FDF0FA00B6BB8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3EE7DCA27FDF0FA00B6BB8C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +34,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E32F6AA827FDF316003D2C6A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E32F6AAA27FDF35B003D2C6A /* MainView.swift */,
+				E32F6AB227FDF3AC003D2C6A /* MyUnitedView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E32F6AA927FDF31F003D2C6A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E3EE7DB727FDF0F800B6BB8C = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +69,9 @@
 		E3EE7DC227FDF0F900B6BB8C /* UnitedAirlinesView */ = {
 			isa = PBXGroup;
 			children = (
+				E32F6AA927FDF31F003D2C6A /* Views */,
+				E32F6AA827FDF316003D2C6A /* Screens */,
 				E3EE7DC327FDF0F900B6BB8C /* UnitedAirlinesViewApp.swift */,
-				E3EE7DC527FDF0F900B6BB8C /* ContentView.swift */,
 				E3EE7DC727FDF0FA00B6BB8C /* Assets.xcassets */,
 				E3EE7DC927FDF0FA00B6BB8C /* Preview Content */,
 			);
@@ -137,8 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3EE7DC627FDF0F900B6BB8C /* ContentView.swift in Sources */,
 				E3EE7DC427FDF0F900B6BB8C /* UnitedAirlinesViewApp.swift in Sources */,
+				E32F6AB327FDF3AC003D2C6A /* MyUnitedView.swift in Sources */,
+				E32F6AAB27FDF35B003D2C6A /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
