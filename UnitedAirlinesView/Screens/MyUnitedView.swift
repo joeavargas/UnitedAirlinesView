@@ -147,6 +147,59 @@ struct MyUnitedView: View {
             
             // MARK: - Upcoming trip section
             
+            VStack {
+                HStack {
+                    Image(systemName: "clock.fill")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 40, height: 40)
+                    
+                    Text("Upcoming trips")
+                        .fontWeight(.medium)
+                    Spacer()
+                }
+                .padding()
+                
+                // Horizontal line
+                Divider()
+                    .background(Color.black)
+                    .padding(.horizontal)
+                
+                // You have no current trips text
+                HStack {
+                    Text("You have no current trips")
+                        .fontWeight(.light)
+                    Spacer()
+                }
+                .padding()
+                
+                // Book now chevron text
+                HStack {
+                    Text("Book now >")
+                        .foregroundColor(.blue)
+                    Spacer()
+                }.padding()
+                
+                VStack(spacing: 14) {
+                    // Horizontal line
+                    Divider()
+                        .background(Color.black)
+                        .padding(.horizontal)
+                    // View all trips text === chevron image
+                    HStack {
+                        Text("View all trips")
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                    }.padding(.horizontal)
+                    
+                    // Horizontal line
+                    Divider()
+                        .background(Color.black)
+                        .padding(.horizontal)
+                }.padding(.top, 5)
+            }
+            .background(Color.white)
+            
             // MARK: - Do you have a known traveler number section
             
             // MARK: - Find everything ok?
