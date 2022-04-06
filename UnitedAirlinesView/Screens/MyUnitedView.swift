@@ -36,8 +36,8 @@ struct MyUnitedView: View {
             // MARK: - Card view section
             VStack {
                 // MARK: - Row 1
-                VStack {
-                    HStack {
+                VStack(spacing: 20) {
+                    HStack(spacing: 20) {
                         CardView(image: "bookmark.fill", subject: "MileagePlus")
                         
                         CardView(image: "airplane", subject: "Trips")
@@ -47,7 +47,7 @@ struct MyUnitedView: View {
                     }//: HStack
                     
                     // MARK: - Row 2
-                    HStack {
+                    HStack(spacing: 20) {
                         CardView(image: "list.number", subject: "Travel-Ready Center")
                         
                         CardView(image: "list.bullet.rectangle", subject: "Receipts")
@@ -110,6 +110,8 @@ struct MyUnitedView: View {
                         .background(Color.black)
                         .padding([.horizontal, .bottom])
                 }.padding(.top, 5)
+                
+                Divider().frame(width: UIScreen.main.bounds.width, height: 10).background(Color(UIColor.lightGray)).padding(.top, 20)
             }
             .background(Color.white)
             
@@ -143,6 +145,9 @@ struct MyUnitedView: View {
                     .padding([.top, .bottom], 25)
                     Spacer()
                 }
+                Divider()
+                    .frame(width: UIScreen.main.bounds.width, height: 10).background(Color(UIColor.lightGray))
+                    .padding(.top, 20)
             }
             .background(Color.white)
             .padding([.top, .bottom])
@@ -151,7 +156,7 @@ struct MyUnitedView: View {
             VStack {
                 HStack {
                     VStack {
-                        VStack(alignment: .leading, spacing: 10) {
+                        VStack(alignment: .leading) {
                             VStack {
                                 HStack {
                                     VStack(alignment: .leading) {
@@ -179,7 +184,7 @@ struct MyUnitedView: View {
                                     }
                                     .layoutPriority(100)
                                     
-                                    Spacer()
+//                                    Spacer()
                                 }
                                 .padding()
                             }
@@ -191,14 +196,12 @@ struct MyUnitedView: View {
                             .padding([.top, .horizontal])
                         }.padding(.horizontal)
                     }
-                    .padding([.top, .bottom], 25)
-                    Spacer()
+//                    .padding([.top, .bottom], 25)
                 }
             }
-            .background(Color.white)
+            .background(Color(UIColor.white))
             .padding([.top, .bottom])
         }
-        .background(Color.secondary)
     }
 }
 
